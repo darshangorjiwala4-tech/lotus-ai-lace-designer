@@ -71,4 +71,4 @@ app.post("/api/generate",upload.fields([{name:"person",maxCount:1},{name:"saree"
 });
 
 const port=process.env.PORT||3000;
-app.listen(port,()=>console.log(`Lotus AI Virtual Trial Room running on http://localhost:${port}`));
+app.listen(port,"0.0.0.0",()=>console.log(`Lotus AI Virtual Trial Room running on http://localhost:${port}`)); AI Virtual Trial Room running on http://localhost:${port}`));
