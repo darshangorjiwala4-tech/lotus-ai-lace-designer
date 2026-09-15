@@ -7,7 +7,7 @@ const {fal}=require("@fal-ai/client");
 
 const app=express();
 const upload=multer({storage:multer.memoryStorage(),limits:{fileSize:10*1024*1024}});
-app.use(express.static(path.join(__dirname,"public")));
+app.use(express.static(__dirname));
 
 if(!process.env.FAL_KEY){
   console.warn("FAL_KEY is not set. Add it to .env or your hosting environment.");
